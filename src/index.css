@@ -1,0 +1,84 @@
+:root {
+  --game-text: #efe8ff;
+  --game-muted: #b8b0c8;
+  /* Void around the playfield — matches island RPG reference */
+  --game-bg: #120c18;
+  /* Page chrome behind the game (not the playfield) */
+  --app-bg: #9fd4f2;
+  --game-field-bg: #120c18;
+  --game-border: #3d4a5c;
+  --game-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --game-player-a: #4a7fd4;
+  --game-player-b: #3558b8;
+  --game-btn-bg: #2a2638;
+  --game-modal-bg: #252030;
+  --game-accent-soft: #3d2a3d;
+  --game-accent-border: #8b5a7c;
+  --game-toast-bg: rgba(40, 36, 52, 0.95);
+
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  line-height: 1.45;
+  color: var(--game-text);
+  background-color: var(--app-bg);
+  background-image: url('/app-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --game-text: #efe8ff;
+    --game-muted: #b8b0c8;
+    --app-bg: #8ecae6;
+    --game-bg: #120c18;
+    --game-field-bg: #120c18;
+    --game-border: #3d4a5c;
+    --game-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    --game-player-a: #4a7fd4;
+    --game-player-b: #3558b8;
+    --game-btn-bg: #2a2638;
+    --game-modal-bg: #252030;
+    --game-accent-soft: #3d2a3d;
+    --game-accent-border: #8b5a7c;
+    --game-toast-bg: rgba(40, 36, 52, 0.95);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  /* Larger base so game UI rem-based type reads clearly */
+  font-size: clamp(110%, 2.8vw, 126%);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  font-weight: 600;
+  background: transparent;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  min-height: 100dvh;
+  background: transparent;
+}
