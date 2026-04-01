@@ -7,7 +7,7 @@ export const STAR_SIZE = 36
 export const HEART_SIZE = 42
 export const MOVE_STEP = 10
 export const STAR_TOTAL = 5
-export const HEART_DURATION_MS = 8000
+export const HEART_DURATION_MS = 5000
 
 export type GamePhase = 'collecting' | 'heart' | 'won' | 'lost'
 

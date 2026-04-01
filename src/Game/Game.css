@@ -378,4 +378,5 @@
   font-size: 0.98rem;
   line-height: 1.45;
   color: var(--game-muted);
+  white-space: pre-line;
 }
